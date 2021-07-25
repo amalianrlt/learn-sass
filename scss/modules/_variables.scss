@@ -1,0 +1,44 @@
+$light-bg: #eaeaea;
+$light-text: #333;
+$dark-bg: #999;
+$dark-text: #ddd;
+$salmon: #fa8072;
+$light-blue: #add8e6;
+$black: #000;
+$turquoise: #40e0d0;
+$light-pink: #eeaaee;
+$light-yellow: #bada55;
+
+
+//CSS variables
+// :root{
+//   --primary-color: #f4f1de,
+//   --secondary-color: #f2cc8f,
+//   --text-color: #e07a5f
+// }
+
+// h1 {
+//   color: var(--text-color);
+// }
+
+//SASS variables
+$primary-color: #f4f1de;
+$secondary-color: #f2cc8f;
+$text-color: #e07a5f;
+
+//MAP
+// $alert-danger: red;
+// $alert-warning: orange;
+// $alert-success: green;
+
+//how to map
+$alert: (
+  'danger': red,
+  'warning': orange,
+  'success': green
+);
+
+//how to use map
+// h1 {
+//   color: map-get($alert, 'success');
+// }

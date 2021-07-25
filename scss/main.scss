@@ -1,0 +1,86 @@
+@import 'modules/mixin';
+@import 'modules/variables';
+
+//regular nested in scss
+// .main {
+//   .container2 & {
+//     background-color: salmon;
+//   }
+//   .main-heading {
+//     font-size: 2rem;
+//   }
+//   .main-paragraph {
+//     font-size: 1.5rem;
+//   }
+//   &:hover {
+//     background-color: lightblue;
+//   }
+// }
+
+//we can do this
+.main {
+  background-color: $salmon;
+  & &-heading {
+    font-size: 2rem;
+  }
+  & &-paragraph {
+    font-size: 1.5rem;
+  }
+  &:hover {
+    background-color: $light-blue;
+  }
+}
+
+.footer {
+  & &-heading {
+    font-size: 2rem;
+  }
+  & &-paragraph {
+    font-size: 1.5rem;
+  }
+}
+
+.header ul {
+  @include inline-list();
+  li {
+    background-color: $salmon;
+    padding: 0.7rem;
+    a {
+      color: black;
+    }
+  }
+}
+
+.header2 ul {
+  @include inline-list();
+  li {
+    background-color: $turquoise;
+    padding: 0.4rem;
+    a {
+      color: $black;
+      text-decoration: none;
+    }
+  }
+}
+
+
+.container {
+  @include flexbox(row-reverse, space-around);
+  width: 600px;
+  height: 600px;
+  background-color: $light-pink;
+  .box {
+    width: 60px;
+    height: 60px;
+    background-color: $light-yellow;
+    text-align: center;
+    line-height: 60px;
+  }
+}
+
+.square-img {
+  @include profilePict(200px, $circle: false)
+}
+.circle-img {
+  @include profilePict(100px, $circle: true)
+}

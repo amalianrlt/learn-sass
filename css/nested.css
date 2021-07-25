@@ -1,0 +1,24 @@
+.main {
+  background-color: salmon;
+}
+
+.main .main-heading {
+  font-size: 2rem;
+}
+
+.main .main-paragraph {
+  font-size: 1.5rem;
+}
+
+.main:hover {
+  background-color: lightblue;
+}
+
+.footer .footer-heading {
+  font-size: 2rem;
+}
+
+.footer .footer-paragraph {
+  font-size: 1.5rem;
+}
+/*# sourceMappingURL=nested.css.map */

@@ -1,0 +1,43 @@
+@import 'variables';
+//create => Mixin
+//call => include
+
+//simple mixin
+@mixin inline-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  li {
+    display: inline-block;
+  }
+}
+
+// arguments in mixin
+@mixin flexbox($direction: row, $space: center) {
+  display: flex;
+  justify-content: $space;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin profilePict($size, $circle: false) {
+  width: $size;
+  height: $size;
+  border: 2px solid $turquoise;
+  box-shadow: 1px 1px 3px rgba($color: $black, $alpha: 0.3);
+  @if $circle {
+    border-radius: 50%;
+  }
+}
+
+// if else condition
+@mixin colorModel($light-mode: true){
+  @if $light-mode {
+    background-color: $light-bg;
+    color: $light-text;
+  } @else {
+    background-color: $dark-bg;
+    color: $dark-text;
+
+  }
+}

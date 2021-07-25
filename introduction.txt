@@ -1,0 +1,17 @@
+//SASS => CSS precompressor
+//SASS and SCSS difference => SCSS using paranthessis {}
+//example:
+
+// SCSS
+// nav {
+//   li {
+//     list-style: none;
+//   }
+// }
+
+// SASS
+// nav 
+//   li 
+//     list-style: none;
+
+
